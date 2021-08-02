@@ -1,6 +1,19 @@
-<div class="naviagetion">
-      <%= link_to "Home", root_path %>
-      <%= link_to "第一个", first_path %>
-      <%= link_to "第二个", second_path %>
-      <%= link_to "第三个", third_path %>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top py-md-4">
+  <a class="navbar-brand text-white" href="/">
+    Rails App
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link text-white" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/user">User</a>
+      </li>
+    </ul>
+  </div>
+</nav>

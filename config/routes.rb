@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   
+  
    root "home#index"
 
-   get "/first", to: "home#first"
-   get "/second", to: "home#second"
-   get "/third", to: "home#third"
+   get '/user', to: "user#index"
 
-   get '/detail/:id', to: "detail#index"
+   get '/detail/:id', to: "detail#index", as: "detail"
 
 end
